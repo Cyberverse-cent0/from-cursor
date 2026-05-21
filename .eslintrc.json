@@ -1,0 +1,16 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "css/no-unused-properties": "off",
+    "css/no-invalid-properties": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.css", "*.scss"],
+      "rules": {
+        "css/no-unknown-at-rules": "off"
+      }
+    }
+  ]
+}

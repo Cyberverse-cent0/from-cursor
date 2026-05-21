@@ -1,0 +1,39 @@
+[Unit]
+Description=Stephen Asatsa Research Hub Backend API
+Documentation=https://github.com/stephen-asatsa/research-hub
+After=network.target mysql.service postgresql.service
+Wants=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/home/codecrafter/it-works-now-research-hub-implementation/apps/website/backend
+Environment=PATH=/home/codecrafter/it-works-now-research-hub-implementation/apps/website/backend/venv/bin
+Environment=FLASK_ENV=production
+Environment=FLASK_PORT=5001
+Environment=SESSION_TIMEOUT=300
+Environment=SQLITE_PATH=/home/codecrafter/it-works-now-research-hub-implementation/apps/website/backend/data/users.db
+Environment=ALLOWED_ORIGIN=https://stephenasatsa.com
+Environment=NEXT_PUBLIC_FLASK_SESSION_URL=https://api.stephenasatsa.com
+Environment=LOG_LEVEL=INFO
+ExecStart=/home/codecrafter/it-works-now-research-hub-implementation/apps/website/backend/venv/bin/python admin_session_manager.py
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=10
+StartLimitInterval=60
+StartLimitBurst=3
+StandardOutput=append:/var/log/stephenasatsa-backend/app.log
+StandardError=append:/var/log/stephenasatsa-backend/error.log
+SyslogIdentifier=stephenasatsa-backend
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/home/codecrafter/it-works-now-research-hub-implementation/apps/website/backend/data
+ReadWritePaths=/var/log/stephenasatsa-backend
+
+[Install]
+WantedBy=multi-user.target

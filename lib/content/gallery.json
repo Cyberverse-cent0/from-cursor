@@ -1,0 +1,102 @@
+{
+  "gallery": [
+    {
+      "id": "1",
+      "title": "Dr. Stephen Asatsa - Professional Portrait",
+      "description": "Professional portrait of Dr. Stephen Asatsa, Head of Psychology Department at CUEA",
+      "image_url": "/assets/gallery/steve15-scaled.webp",
+      "thumbnail_url": "/assets/gallery/steve15-scaled.webp",
+      "upload_date": "2024-01-15",
+      "file_size": 374794,
+      "dimensions": { "width": 1200, "height": 800 },
+      "category": "Professional",
+      "tags": ["portrait", "professional", "cuea"],
+      "uploaded_by": "admin",
+      "filename": "steve15-scaled.webp"
+    },
+    {
+      "id": "2", 
+      "title": "Research Presentation",
+      "description": "Dr. Asatsa presenting research findings at an international conference",
+      "image_url": "/assets/gallery/steve3.webp",
+      "thumbnail_url": "/assets/gallery/steve3.webp",
+      "upload_date": "2024-02-20",
+      "file_size": 77602,
+      "dimensions": { "width": 800, "height": 600 },
+      "category": "Research",
+      "tags": ["presentation", "conference", "research"],
+      "uploaded_by": "admin",
+      "filename": "steve3.webp"
+    },
+    {
+      "id": "3",
+      "title": "Africa Long Life Study",
+      "description": "Field work for the Africa Long Life Study in Kenya",
+      "image_url": "/assets/gallery/project.webp",
+      "thumbnail_url": "/assets/gallery/project.webp",
+      "upload_date": "2024-03-10",
+      "file_size": 228190,
+      "dimensions": { "width": 1000, "height": 750 },
+      "category": "Research",
+      "tags": ["africa", "long-life-study", "field-work"],
+      "uploaded_by": "admin",
+      "filename": "project.webp"
+    },
+    {
+      "id": "4",
+      "title": "Durham University Award",
+      "description": "Receiving International Research Collaboration Award from Durham University",
+      "image_url": "/assets/gallery/awards.webp",
+      "thumbnail_url": "/assets/gallery/awards.webp",
+      "upload_date": "2024-04-15",
+      "file_size": 29532,
+      "dimensions": { "width": 800, "height": 600 },
+      "category": "Awards",
+      "tags": ["award", "durham", "recognition"],
+      "uploaded_by": "admin",
+      "filename": "awards.webp"
+    },
+    {
+      "id": "5",
+      "title": "Community Mental Health Work",
+      "description": "Working with community mental health initiatives in Kenya",
+      "image_url": "/assets/gallery/asatsa-7.jpeg",
+      "thumbnail_url": "/assets/gallery/asatsa-7.jpeg",
+      "upload_date": "2024-05-20",
+      "file_size": 137407,
+      "dimensions": { "width": 900, "height": 675 },
+      "category": "Community",
+      "tags": ["community", "mental-health", "kenya"],
+      "uploaded_by": "admin",
+      "filename": "asatsa-7.jpeg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "professional",
+      "name": "Professional",
+      "description": "Professional portraits and formal events"
+    },
+    {
+      "id": "research",
+      "name": "Research", 
+      "description": "Research activities and presentations"
+    },
+    {
+      "id": "awards",
+      "name": "Awards",
+      "description": "Awards and recognition ceremonies"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "description": "Community engagement and outreach"
+    }
+  ],
+  "settings": {
+    "autoLoad": true,
+    "itemsPerPage": 12,
+    "showCategories": true,
+    "allowLightbox": true
+  }
+}

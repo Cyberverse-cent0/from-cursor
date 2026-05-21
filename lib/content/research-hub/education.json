@@ -1,0 +1,173 @@
+{
+  "education": [
+    {
+      "id": "phd-counseling-psychology",
+      "degree": "Doctor of Philosophy (PhD) in Counseling Psychology",
+      "institution": "Catholic University of Eastern Africa",
+      "years": "2018",
+      "location": "Nairobi, Kenya",
+      "description": "Doctoral research focused on indigenous knowledge systems and cultural approaches to psychology. Dissertation explored culturally grounded mental health practices.",
+      "thesis": "Research on indigenous psychology and cultural evolution in African contexts",
+      "achievements": [
+        "First doctoral graduate in Counseling Psychology department",
+        "Research published in international journals",
+        "Groundbreaking work on decolonizing psychology"
+      ],
+      "level": "doctorate",
+      "significance": "highest"
+    },
+    {
+      "id": "ma-counseling-psychology",
+      "degree": "Master of Arts (MA) in Counseling Psychology",
+      "institution": "Mount Kenya University",
+      "years": "2014-2016",
+      "location": "Thika, Kenya",
+      "description": "Advanced training in counseling psychology with focus on clinical practice and research methodologies. Specialized in cross-cultural counseling approaches.",
+      "thesis": "Cultural factors in mental health interventions",
+      "achievements": [
+        "Excellence in academic performance",
+        "Clinical practice certification",
+        "Research presentation at national conference"
+      ],
+      "level": "masters",
+      "significance": "high"
+    },
+    {
+      "id": "higher-diploma-psychological-counseling",
+      "degree": "Higher Diploma in Psychological Counseling",
+      "institution": "Kenya Methodist University",
+      "years": "2012-2013",
+      "location": "Meru, Kenya",
+      "description": "Professional training in psychological counseling techniques and clinical practice. Focus on practical counseling skills and ethical practices.",
+      "achievements": [
+        "Professional counseling certification",
+        "Clinical internship completion",
+        "Ethics and professional standards training"
+      ],
+      "level": "diploma",
+      "significance": "medium"
+    },
+    {
+      "id": "bed-arts",
+      "degree": "Bachelor of Education (Arts)",
+      "institution": "Kenyatta University",
+      "years": "2008-2011",
+      "location": "Nairobi, Kenya",
+      "description": "Undergraduate education combining arts disciplines with educational pedagogy. Foundation in psychology, sociology, and educational theory.",
+      "specializations": ["Psychology", "Sociology", "Education"],
+      "achievements": [
+        "Dean's List recognition",
+        "Student leadership roles",
+        "Research methodology training"
+      ],
+      "level": "bachelors",
+      "significance": "foundation"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "licensed-psychologist-kenya",
+      "title": "Licensed Counseling Psychologist",
+      "issuingBody": "Kenya Counselors and Psychologists Board (KCPB)",
+      "year": "2017",
+      "status": "Active",
+      "description": "Professional license to practice psychology in Kenya. Requires ongoing professional development and ethical standards compliance.",
+      "licenseNumber": "KCPB/CP/XXXX",
+      "renewal": "Annual professional development required"
+    },
+    {
+      "id": "registered-psychologist-kenya",
+      "title": "Registered Psychologist",
+      "issuingBody": "Kenya Counselors and Psychologists Board (KCPB)",
+      "year": "2017",
+      "status": "Active",
+      "description": "Professional registration recognizing qualifications and ethical practice standards."
+    }
+  ],
+  "professionalDevelopment": [
+    {
+      "id": "cultural-evolution-society-training",
+      "title": "Cultural Evolution Society Advanced Training",
+      "institution": "Cultural Evolution Society",
+      "year": "2022",
+      "description": "Advanced training in cultural evolution theory and research methodologies.",
+      "focus": "Cultural evolution, quantitative ethnography"
+    },
+    {
+      "id": "longitudinal-research-methods",
+      "title": "Longitudinal Research Design and Analysis",
+      "institution": "University of Zurich",
+      "year": "2022",
+      "description": "Specialized training in longitudinal study design and statistical analysis.",
+      "focus": "Longitudinal methodology, advanced statistics"
+    },
+    {
+      "id": "cross-cultural-research-ethics",
+      "title": "Cross-Cultural Research Ethics",
+      "institution": "HRAF (Yale University)",
+      "year": "2023",
+      "description": "Training in ethical considerations for cross-cultural and indigenous research.",
+      "focus": "Research ethics, indigenous methodologies"
+    }
+  ],
+  "academicTimeline": [
+    {
+      "year": "2008-2011",
+      "stage": "Undergraduate Foundation",
+      "institution": "Kenyatta University",
+      "degree": "Bachelor of Education (Arts)",
+      "focus": "Psychology, Sociology, Education"
+    },
+    {
+      "year": "2012-2013",
+      "stage": "Professional Training",
+      "institution": "Kenya Methodist University",
+      "degree": "Higher Diploma in Psychological Counseling",
+      "focus": "Clinical counseling skills"
+    },
+    {
+      "year": "2014-2016",
+      "stage": "Advanced Studies",
+      "institution": "Mount Kenya University",
+      "degree": "Master of Arts in Counseling Psychology",
+      "focus": "Advanced counseling theory and research"
+    },
+    {
+      "year": "2017",
+      "stage": "Professional Licensure",
+      "achievement": "Licensed and Registered Psychologist (KCPB)",
+      "focus": "Professional practice authorization"
+    },
+    {
+      "year": "2018",
+      "stage": "Doctoral Achievement",
+      "institution": "Catholic University of Eastern Africa",
+      "degree": "PhD in Counseling Psychology",
+      "focus": "Indigenous psychology and cultural evolution"
+    },
+    {
+      "year": "2019-Present",
+      "stage": "Academic Leadership",
+      "role": "Senior Lecturer & Head of Psychology Department",
+      "institution": "Catholic University of Eastern Africa",
+      "focus": "Academic leadership and research"
+    }
+  ],
+  "academicProgression": {
+    "totalYears": "15+ years of higher education",
+    "institutions": "4 major Kenyan universities",
+    "progression": "Bachelor's → Diploma → Master's → PhD",
+    "specializations": [
+      "Counseling Psychology",
+      "Cross-Cultural Psychology",
+      "Indigenous Knowledge Systems",
+      "Research Methodology"
+    ],
+    "achievements": [
+      "First PhD graduate in Counseling Psychology at CUEA",
+      "Professional licensure and registration",
+      "Academic leadership position",
+      "International research recognition"
+    ]
+  }
+}

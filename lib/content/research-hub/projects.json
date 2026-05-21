@@ -1,0 +1,206 @@
+{
+  "majorProjects": [
+    {
+      "id": "africa-long-life-study",
+      "title": "Africa Long Life Study (ALLS)",
+      "shortTitle": "ALLS",
+      "status": "active",
+      "years": "2022-Present",
+      "type": "longitudinal",
+      "description": "A groundbreaking longitudinal study exploring psychological development of young adults in Namibia, Kenya, and South Africa, integrating etic (imported) with emic (Africentric) approaches to test global findings while building local theory.",
+      "significance": "Addresses the critical gap in psychological science where most research comes from Western industrialized settings (only 11% of world population)",
+      "countries": ["Kenya", "Namibia", "South Africa"],
+      "funding": [
+        {
+          "organization": "European Research Council",
+          "type": "ERC Consolidator Grant",
+          "year": "2025",
+          "amount": "Major funding award",
+          "description": "Pan-African Longitudinal Study: Renewing Psychology with Strong Tests of Universality and New Insights"
+        },
+        {
+          "organization": "Swiss National Science Foundation",
+          "type": "Research Grant",
+          "year": "2022",
+          "description": "Core funding for longitudinal research infrastructure"
+        },
+        {
+          "organization": "University of Zurich",
+          "type": "Institutional Support",
+          "year": "2022",
+          "description": "Lead institution coordination and resources"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Amber Gayle Thalmayer, PhD",
+          "institution": "University of Zurich",
+          "role": "Principal Investigator",
+          "country": "Switzerland"
+        },
+        {
+          "name": "Stephen Asatsa, PhD",
+          "institution": "Catholic University of Eastern Africa",
+          "role": "Kenya Country Lead",
+          "country": "Kenya"
+        },
+        {
+          "name": "Elizabeth N. Shino",
+          "institution": "University of Namibia",
+          "role": "Namibia Country Lead",
+          "country": "Namibia"
+        },
+        {
+          "name": "Luzelle Naudé",
+          "institution": "University of the Free State",
+          "role": "South Africa Country Lead",
+          "country": "South Africa"
+        }
+      ],
+      "objectives": [
+        "Test replicability of Western psychological findings in African contexts",
+        "Build theory about local psychological phenomena and topics of interest",
+        "Generate high-quality data for global psychological science",
+        "Provide data for local mental health efforts",
+        "Mentor students and build research capacity in Africa"
+      ],
+      "impact": {
+        "scientific": "First major longitudinal study spanning multiple African countries",
+        "community": "Provides data for local mental health interventions",
+        "capacity": "Mentoring next generation of African researchers",
+        "global": "Challenging Western-centric psychological science"
+      },
+      "website": "https://www.africalonglifestudy.org/",
+      "publications": [
+        {
+          "title": "Lifespan research in Kenya, Namibia, and South Africa: Cohort profile of the Africa long life study",
+          "journal": "Personality Science",
+          "year": "2024",
+          "authors": "Thalmayer, A. G., Asatsa, S., Shino, E. N., Naudé, L., Laher, S., et al."
+        }
+      ]
+    },
+    {
+      "id": "luhya-mourning-rituals",
+      "title": "Traditional Luhya Mourning Rituals: A Cultural Evolutionary Approach",
+      "shortTitle": "Luhya Mourning Study",
+      "status": "active",
+      "years": "2022-Present",
+      "type": "cultural-evolution",
+      "description": "Research examining how traditional Luhya mourning rituals contribute to individual wellbeing, community cooperation, and cultural transmission in the face of modernization and Christianization.",
+      "significance": "Selected as one of 16 global projects funded by Templeton Foundation through Cultural Evolution Society",
+      "funding": [
+        {
+          "organization": "John Templeton Foundation",
+          "type": "Cultural Transformation Grant",
+          "year": "2022",
+          "amount": "GBP 89,200",
+          "description": "Major grant for research on traditional Luhya mourning rituals and cultural transformation"
+        },
+        {
+          "organization": "Cultural Evolution Society",
+          "type": "ACE Grant",
+          "year": "2023",
+          "amount": "$6,000",
+          "description": "Grant for scholar mobility and collaborative research activities"
+        },
+        {
+          "organization": "Durham University",
+          "type": "International Collaboration Award",
+          "year": "2024",
+          "description": "Recognition for outstanding international research collaboration"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Stephen Asatsa, PhD",
+          "institution": "Catholic University of Eastern Africa",
+          "role": "Principal Investigator",
+          "country": "Kenya"
+        },
+        {
+          "name": "Durham University Cultural Evolution Group",
+          "institution": "Durham University",
+          "role": "Research Partner",
+          "country": "United Kingdom"
+        }
+      ],
+      "objectives": [
+        "Explore therapeutic value of Luhya traditional mourning rituals",
+        "Examine role of mourning rituals on community cooperation",
+        "Evaluate role of mourning rituals on cultural transmission",
+        "Investigate impact of globalization on traditional practices"
+      ],
+      "impact": {
+        "cultural": "Documenting and preserving indigenous knowledge systems",
+        "community": "Understanding mental health benefits of traditional practices",
+        "academic": "Contributing to cultural evolution theory",
+        "policy": "Informing culturally appropriate mental health interventions"
+      },
+      "methodology": {
+        "design": "Quantitative ethnography design with anthropological techniques",
+        "participants": "Luhya community members and Christian leaders",
+        "data": "Interviews, observations, cultural artifact analysis"
+      }
+    },
+    {
+      "id": "covid-adolescent-regulation",
+      "title": "COVID-19 Impacts on Adolescent Emotional Regulation",
+      "shortTitle": "COVID Adolescent Study",
+      "status": "completed",
+      "years": "2020-2022",
+      "type": "cross-cultural",
+      "description": "International research examining how the COVID-19 pandemic affected emotional regulation and mental health among adolescents across different cultural contexts.",
+      "funding": [
+        {
+          "organization": "Society for Research on Adolescence",
+          "type": "COVID-19 Network Early Career Scholars Fellowship",
+          "year": "2022",
+          "amount": "$8,500",
+          "description": "Fellowship for research on COVID-19 impacts on adolescent development"
+        },
+        {
+          "organization": "International Consortium of Developmental Science Societies",
+          "type": "COVID Global Scholar",
+          "year": "2022",
+          "description": "Recognition for research on COVID-19 impacts on adolescent development"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Stephen Asatsa, PhD",
+          "institution": "Catholic University of Eastern Africa",
+          "role": "Kenya Research Lead",
+          "country": "Kenya"
+        },
+        {
+          "organization": "International Consortium of Developmental Science Societies",
+          "role": "Coordinating Body",
+          "country": "International"
+        }
+      ],
+      "findings": [
+        "Significant variation in coping strategies across cultures",
+        "Importance of community support systems during pandemic",
+        "Gender differences in emotional regulation responses",
+        "Impact of school closures on adolescent mental health"
+      ]
+    }
+  ],
+  "emergingProjects": [
+    {
+      "id": "decolonizing-psychology-curriculum",
+      "title": "Decolonizing Psychology Curriculum in African Universities",
+      "status": "planning",
+      "description": "Developing and implementing psychology curricula that integrate indigenous knowledge systems and African perspectives.",
+      "focus": "Education reform, indigenous knowledge, curriculum development"
+    },
+    {
+      "id": "african-personality-assessment",
+      "title": "Culturally Validated Personality Assessment for African Contexts",
+      "status": "planning",
+      "description": "Creating and validating personality assessment tools that are culturally appropriate for African populations.",
+      "focus": "Psychometrics, cultural validation, assessment tools"
+    }
+  ]
+}

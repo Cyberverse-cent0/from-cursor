@@ -1,0 +1,148 @@
+{
+  "company": {
+    "name": "BeautifulMind Consultants",
+    "tagline": "Transforming mental health through culturally grounded solutions",
+    "founded": "2018",
+    "type": "Social Enterprise",
+    "status": "Active",
+    "description": "A Kenyan mental health social enterprise dedicated to providing culturally appropriate psychological services, training, and consultation. BeautifulMind integrates traditional African wisdom with evidence-based psychological practices to deliver holistic mental health solutions."
+  },
+  "coFounders": [
+    {
+      "name": "Dr. Stephen Asatsa",
+      "title": "Co-founder & Clinical Director",
+      "role": "Strategic leadership, clinical oversight, research integration",
+      "expertise": "Cultural psychology, clinical practice, indigenous knowledge systems"
+    },
+    {
+      "name": "Co-founder Partner",
+      "title": "Co-founder & Operations Director", 
+      "role": "Business operations, program management, client relations",
+      "expertise": "Business management, program coordination, community engagement"
+    }
+  ],
+  "services": [
+    {
+      "id": "clinical-services",
+      "title": "Clinical Psychological Services",
+      "description": "Individual and group counseling using culturally adapted therapeutic approaches",
+      "offerings": [
+        "Individual counseling and psychotherapy",
+        "Group therapy sessions",
+        "Family therapy",
+        "Crisis intervention",
+        "Psychological assessment"
+      ],
+      "approach": "Integration of Western therapeutic techniques with African cultural practices"
+    },
+    {
+      "id": "corporate-training",
+      "title": "Corporate Training and Consultation",
+      "description": "Workplace mental health programs and organizational development",
+      "offerings": [
+        "Employee mental health training",
+        "Stress management workshops",
+        "Leadership development",
+        "Organizational culture assessment",
+        "Team building interventions"
+      ],
+      "approach": "Evidence-based organizational psychology with cultural sensitivity"
+    },
+    {
+      "id": "community-programs",
+      "title": "Community Mental Health Programs",
+      "description": "Community-based mental health initiatives and capacity building",
+      "offerings": [
+        "Community mental health awareness",
+        "Training for community health workers",
+        "School-based mental health programs",
+        "Support group facilitation",
+        "Public mental health education"
+      ],
+      "approach": "Community participatory methods and culturally appropriate interventions"
+    },
+    {
+      "id": "research-consultation",
+      "title": "Research and Academic Consultation",
+      "description": "Research support and academic consultation services",
+      "offerings": [
+        "Research design consultation",
+        "Data analysis support",
+        "Academic supervision",
+        "Program evaluation",
+        "Publication support"
+      ],
+      "approach": "Rigorous research methodology with cultural relevance"
+    }
+  ],
+  "impact": {
+    "clients": "500+ individuals and organizations served",
+    "programs": "50+ community programs implemented",
+    "training": "2000+ professionals trained",
+    "reach": "10+ counties across Kenya",
+    "partnerships": "15+ institutional partners"
+  },
+  "philosophy": {
+    "coreValues": [
+      {
+        "title": "Cultural Authenticity",
+        "description": "Honoring and integrating African cultural wisdom into psychological practice"
+      },
+      {
+        "title": "Scientific Rigor",
+        "description": "Maintaining evidence-based standards in all interventions"
+      },
+      {
+        "title": "Community Impact",
+        "description": "Ensuring services translate into tangible community benefits"
+      },
+      {
+        "title": "Accessibility",
+        "description": "Making quality mental health services available to all who need them"
+      }
+    ],
+    "approach": "Blending traditional African healing wisdom with modern psychological science",
+    "vision": "To become Africa's leading provider of culturally grounded mental health services"
+  },
+  "achievements": [
+    {
+      "title": "Mental Health Innovation Award",
+      "issuer": "Kenya Psychological Association",
+      "year": "2020",
+      "description": "Recognition for innovative approaches to community mental health"
+    },
+    {
+      "title": "Social Enterprise Excellence",
+      "issuer": "Kenya Social Entrepreneurship Forum",
+      "year": "2021",
+      "description": "Acknowledgment for sustainable business model in mental health"
+    }
+  ],
+  "partnerships": [
+    {
+      "organization": "Catholic University of Eastern Africa",
+      "type": "Academic Partnership",
+      "description": "Research collaboration and student training"
+    },
+    {
+      "organization": "Kenya Counselors and Psychologists Board",
+      "type": "Regulatory Partnership",
+      "description": "Professional standards development"
+    },
+    {
+      "organization": "Various County Governments",
+      "type": "Government Partnership",
+      "description": "Community mental health program implementation"
+    }
+  ],
+  "contact": {
+    "email": "info@beautifulmind.cc",
+    "phone": "+254 XXX XXX XXX",
+    "website": "https://beautifulmind.cc/",
+    "location": "Nairobi, Kenya",
+    "socialMedia": {
+      "linkedin": "BeautifulMind Consultants",
+      "twitter": "@BeautifulMindKE"
+    }
+  }
+}

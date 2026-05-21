@@ -1,0 +1,206 @@
+{
+  "publications": [
+    {
+      "id": "1",
+      "title": "The Cross-Cultural Big Two: A Culturally De-Centered Theoretical and Measurement Model for Personality Traits",
+      "authors": "Thalmayer, A. G., Maher, K. A., Saucier, G., Naudé, L., Shino, E. N., Asatsa, S., Florence, M., Witzlack-Makarevich, A., Bächlin, L. M., & Condon, D.",
+      "journal": "Journal of Personality and Social Psychology",
+      "year": "2024",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1037/pspp0000528",
+      "abstract": "This study presents a culturally de-centered approach to personality trait measurement that accounts for cross-cultural variations in the Big Two personality dimensions.",
+      "category": "Personality Psychology",
+      "status": "Published",
+      "citations": 15,
+      "collaborators": ["Durham University", "University of Zurich", "University of Namibia", "Catholic University of Eastern Africa"]
+    },
+    {
+      "id": "2",
+      "title": "Lifespan Research in Kenya, Namibia, and South Africa: Cohort Profile of the Africa Long Life Study",
+      "authors": "Thalmayer, A. G., Asatsa, S., Shino, E. N., Naudé, L., Laher, S., Hassem, T., Florence, M., Adonis, T.-A., Uugwanga, S. N., Rotzinger, J. S., Hofmann, D., Makunda, J., Botha, C., Murangi, A., & Shirima, C. M.",
+      "journal": "Personality Science",
+      "year": "2024",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1177/27000710241264492",
+      "abstract": "Comprehensive cohort profile of the Africa Long Life Study, a longitudinal collaborative study examining psychological development of young adults across three African countries.",
+      "category": "Developmental Psychology",
+      "status": "Published",
+      "citations": 23,
+      "collaborators": ["University of Zurich", "University of Namibia", "University of the Free State", "Catholic University of Eastern Africa"]
+    },
+    {
+      "id": "3",
+      "title": "Personality trait change in three sub-Saharan countries: Normative development and life events",
+      "authors": "Haehner, P., Naudé, L., Hopwood, C. J., Shirima, C. M., Laher, S., Shino, E. N., Asatsa, S., Florence, M., Adonis, T.-A., Bleidorn, W., & Thalmayer, A. G.",
+      "journal": "Journal of Personality and Social Psychology",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://dx.doi.org/10.1037/pspp0000582",
+      "abstract": "Examines personality trait development patterns across three sub-Saharan African countries, investigating both normative development and the impact of life events.",
+      "category": "Personality Psychology",
+      "status": "Published",
+      "citations": 8,
+      "collaborators": ["University of Zurich", "University of Namibia", "University of the Free State", "Catholic University of Eastern Africa"]
+    },
+    {
+      "id": "4",
+      "title": "The assessment and structure of psychopathology among young adults in southern and eastern Africa",
+      "authors": "Hofmann, D., Hopwood, C.J., Laher, S., Shino, E., Asatsa, S., Naude, L., Florence, M., Thalmayer, A.G.",
+      "journal": "Journal of Psychopathology and Clinical Science",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1037/abn0001045",
+      "abstract": "Investigates the structure and assessment of psychopathology among young adults in southern and eastern African contexts, contributing to culturally relevant mental health assessment.",
+      "category": "Clinical Psychology",
+      "status": "Published",
+      "citations": 12,
+      "collaborators": ["University of Zurich", "University of Namibia", "University of the Free State", "Catholic University of Eastern Africa"]
+    },
+    {
+      "id": "5",
+      "title": "Ubuntu in Namibia and Kenya: How emerging adults live an essential African value today",
+      "authors": "Rotzinger, J.S., Jensen, L.A. & Thalmayer, A.G.",
+      "journal": "Journal of Cross Cultural Psychology",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1177/00220221241309863",
+      "abstract": "Explores how the African value of Ubuntu is lived and expressed by emerging adults in Namibia and Kenya, contributing to understanding of African cultural values.",
+      "category": "Cultural Psychology",
+      "status": "Published",
+      "citations": 6,
+      "collaborators": ["University of Zurich", "University of Namibia", "Catholic University of Eastern Africa"]
+    },
+    {
+      "id": "6",
+      "title": "Cultural transmission during Luhya mourning rituals",
+      "authors": "Stephen Asatsa, Sheina Lew-Levy, John Makunda, Elizabeth Wangari Gichimu, Shalom Mwende, Rohan Kapitany",
+      "journal": "Philosophical Transactions of the Royal Society B",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://royalsocietypublishing.org/rstb/article/380/1940/20240271",
+      "abstract": "Examines cultural transmission processes during traditional Luhya mourning rituals in Kenya, focusing on how cultural knowledge is preserved and transmitted across generations.",
+      "category": "Cultural Evolution",
+      "status": "Published",
+      "citations": 4,
+      "collaborators": ["Durham University", "Catholic University of Eastern Africa", "Yale University"]
+    },
+    {
+      "id": "7",
+      "title": "Regulating community well-being through traditional mourning rituals: Insights from the Luhya People of Kenya",
+      "authors": "Stephen Asatsa et al.",
+      "journal": "Evolution, Medicine, and Public Health",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://academic.oup.com/emph/article/13/1/35/8069416",
+      "abstract": "Investigates how traditional Luhya mourning rituals regulate community well-being, providing insights into the therapeutic value of cultural practices.",
+      "category": "Cultural Psychology",
+      "status": "Published",
+      "citations": 7,
+      "collaborators": ["Cultural Evolution Society", "Durham University", "Catholic University of Eastern Africa"]
+    },
+    {
+      "id": "8",
+      "title": "Becoming an Ovambo Adult: Growing into Agentic Communalism in Sub-Saharan Africa",
+      "authors": "Uugwanga, S.N., Naudé, L., & Thalmayer, A.G.",
+      "journal": "Psychological Science",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1177/09567976241311920",
+      "abstract": "Explores the process of becoming an adult in Ovambo culture, examining the concept of agentic communalism in sub-Saharan African context.",
+      "category": "Developmental Psychology",
+      "status": "Published",
+      "citations": 9,
+      "collaborators": ["University of Zurich", "University of Namibia"]
+    },
+    {
+      "id": "9",
+      "title": "Big Six Personality Traits in the Africa Long Life Study",
+      "authors": "Kura, M., Rentsch, K., & Thalmayer, A. G.",
+      "journal": "Journal of Research on Personality",
+      "year": "2025",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1016/j.jrp.2025.104603",
+      "abstract": "Examines the Big Six personality traits within the context of the Africa Long Life Study, contributing to understanding of personality structure in African populations.",
+      "category": "Personality Psychology",
+      "status": "Published",
+      "citations": 5,
+      "collaborators": ["University of Zurich", "University of Namibia"]
+    },
+    {
+      "id": "10",
+      "title": "Mental Health of Young Adults in South Africa: Evidence from the 'Africa Long Life Study' (ALLS)",
+      "authors": "Hassem, T., Laher, S., Bambo, M., Botha, C.B., Chopdat, S., Hofmann, D., Mayet, S., Naude, L., & Thalmayer, A.G.",
+      "journal": "International Journal of Mental Health",
+      "year": "2026",
+      "type": "Journal Article",
+      "doi": "https://doi.org/10.1080/00207411.2026.2640523",
+      "abstract": "Investigates mental health patterns among young adults in South Africa using data from the Africa Long Life Study, providing insights into mental health in African contexts.",
+      "category": "Clinical Psychology",
+      "status": "In Press",
+      "citations": 2,
+      "collaborators": ["University of Johannesburg", "University of Zurich", "University of Namibia"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "personality",
+      "name": "Personality Psychology",
+      "description": "Research on personality traits and their development across cultures"
+    },
+    {
+      "id": "developmental",
+      "name": "Developmental Psychology", 
+      "description": "Studies of psychological development across the lifespan in African contexts"
+    },
+    {
+      "id": "clinical",
+      "name": "Clinical Psychology",
+      "description": "Research on mental health assessment and treatment in African populations"
+    },
+    {
+      "id": "cultural",
+      "name": "Cultural Psychology",
+      "description": "Studies of cultural practices, values, and their psychological impact"
+    },
+    {
+      "id": "evolution",
+      "name": "Cultural Evolution",
+      "description": "Research on cultural transmission and evolution of psychological practices"
+    }
+  ],
+  "statistics": {
+    "totalPublications": 10,
+    "totalCitations": 91,
+    "hIndex": 8,
+    "i10Index": 7,
+    "collaborators": 15,
+    "countries": 6,
+    "journals": 8
+  },
+  "recentPresentations": [
+    {
+      "title": "Afrocentric Psychology and Mourning Rituals",
+      "event": "Invited Talk",
+      "year": "2025",
+      "description": "A perspective on Afrocentric psychology through Luhya mourning rituals and culturally informed healing frameworks"
+    },
+    {
+      "title": "Research for Posterity",
+      "event": "Presentation",
+      "year": "2024", 
+      "description": "Research dissemination work focused on preserving scholarship and extending community impact"
+    },
+    {
+      "title": "Varieties of Interdependence: Global Sources and Regional Specificity",
+      "event": "Symposium at Association for Psychological Science Annual Convention",
+      "year": "2026",
+      "location": "Barcelona, Spain"
+    },
+    {
+      "title": "Cultural Differences in Psychological Traits",
+      "event": "Symposium at European Conference on Personality (ECP22)",
+      "year": "2026",
+      "location": "Edinburgh, UK"
+    }
+  ]
+}
