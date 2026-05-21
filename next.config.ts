@@ -1,179 +1,37 @@
 import type { NextConfig } from "next";
 
+/** cPanel / shared hosting: single Next.js process, no Flask proxy */
 const nextConfig: NextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: false,
-  },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: false },
+  poweredByHeader: false,
+  compress: true,
+  reactStrictMode: true,
+  serverExternalPackages: ["@prisma/client"],
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "stephenasatsa.com",
-      },
-      {
-        protocol: "https",
-        hostname: "img.youtube.com",
-      },
+      { protocol: "https", hostname: "stephenasatsa.com" },
+      { protocol: "https", hostname: "www.stephenasatsa.com" },
+      { protocol: "https", hostname: "img.youtube.com" },
     ],
-    minimumCacheTTL: 60 * 60 * 24, // 24 hours
-    dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    unoptimized: process.env.CPANEL_IMAGE_UNOPTIMIZED === "true",
   },
-  // Enhanced security and caching headers
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: [
-          {
-            key: "X-Frame-Options",
-            value: "DENY",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
-          },
-          {
-            key: "X-DNS-Prefetch-Control",
-            value: "on",
-          },
-        ],
-      },
-      // API routes with smart caching
-      {
-        source: "/api/content(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=300, stale-while-revalidate=600, must-revalidate",
-          },
-          {
-            key: "Vary",
-            value: "Accept-Encoding",
-          },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
         ],
       },
       {
         source: "/api/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "no-cache, no-store, must-revalidate",
-          },
-          {
-            key: "Pragma",
-            value: "no-cache",
-          },
-          {
-            key: "Expires",
-            value: "0",
-          },
-        ],
-      },
-      // Static assets with long-term caching
-      {
-        source: "/_next/static/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/assets/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/uploads/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=86400, stale-while-revalidate=604800",
-          },
-        ],
-      },
-      // Images with optimized caching
-      {
-        source: "/_next/image(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
+        headers: [{ key: "Cache-Control", value: "no-store" }],
       },
     ];
-  },
-  // Additional security and performance settings
-  poweredByHeader: false,
-  compress: true,
-  reactStrictMode: true,
-  
-  // Experimental features for performance
-  experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['lucide-react', 'framer-motion'],
-  },
-  
-  // Server external packages (moved from experimental)
-  serverExternalPackages: ['@prisma/client'],
-  generateEtags: true,
-  generateBuildId: () => 'build',
-  
-  // Disable standalone output temporarily to fix build
-  // output: "standalone",
-  
-  // Rewrite API requests to Flask backend with caching
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "http://localhost:5001/api/:path*",
-      },
-    ];
-  },
-  
-  // Webpack optimizations
-  webpack: (config, { dev, isServer }) => {
-    // Enable compression for production
-    if (!dev && !isServer) {
-      config.optimization.minimize = true;
-    }
-    
-    // Optimize chunk splitting
-    if (!isServer) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
-          },
-        },
-      };
-    }
-    
-    return config;
   },
 };
 

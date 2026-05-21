@@ -19,6 +19,10 @@ backend/venv/
 !.env.example
 !backend/.env.example
 
+# Local data (contact form submissions on server)
+data/*.json
+!data/.gitkeep
+
 # Database
 *.db
 *.db-shm

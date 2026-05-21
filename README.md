@@ -1,52 +1,56 @@
-# Dr. Stephen Asatsa — Website
+# Dr. Stephen Asatsa — Website (cPanel edition)
 
-Next.js application for [stephenasatsa.com](https://stephenasatsa.com): public site, research hub, and admin APIs.
+Next.js 15 site for [stephenasatsa.com](https://stephenasatsa.com): public pages, research hub, contact form, and admin API — **optimized for cPanel shared hosting**.
 
-## Requirements
+## Stack
 
-- Node.js 18+ and npm
-- MySQL (recommended for production / cPanel) or PostgreSQL (update `prisma/schema.prisma`)
+- **Next.js 15** + React 19 + Tailwind CSS
+- **NextAuth** (Google OAuth + admin email/password)
+- **Prisma** + **MySQL** (cPanel default)
+- **JSON content** in `lib/content/` (works without DB for static sections)
+- Contact messages → `data/contact-submissions.json`
 
-## Quick start
+No Flask. No second server process.
+
+## Local development
 
 ```bash
 cp .env.example .env
-# Edit .env with your database and auth secrets
-
 npm install
-npx prisma generate
+npx prisma db push   # optional if DATABASE_URL set
 npm run dev
 ```
 
 Open http://localhost:3000
 
-## Production build
+## Production on cPanel
 
-```bash
-npm run build
-npm start
-```
+See **[CPANEL.md](./CPANEL.md)** for full steps.
 
-## Deploy (source-only package)
+Quick summary:
 
-From the parent monorepo, pack without `node_modules` or `.next`:
+1. Upload source to `~/stephenasatsa`
+2. cPanel → **Setup Node.js App** → startup file **`server.js`**
+3. Set `.env` (MySQL, `NEXTAUTH_*`, `ADMIN_*`)
+4. `npm install` → `npx prisma db push` → `npm run build` → **Restart**
 
-```bash
-tar -czf stephenasatsa-source.tar.gz \
-  --exclude=node_modules --exclude=.next --exclude=backend/venv \
-  .
-```
+## Scripts
 
-On the server: extract, `npm install`, `npm run build`, then configure cPanel **Setup Node.js App** or `npm start`.
+| Command | Purpose |
+|---------|---------|
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm start` | Production server (uses `PORT`) |
+| `npm run prisma:push` | Apply schema to MySQL |
 
-## Structure
+## Pages
 
-- `app/` — Next.js App Router pages and API routes
-- `components/` — React UI
-- `lib/` — Auth, content, utilities
-- `prisma/` — Database schema
-- `backend/` — Legacy Flask API (optional; prefer Next.js `app/api` on cPanel)
+- `/` — Home
+- `/about`, `/services`, `/gallery`, `/contact`
+- `/research-hub` — Research showcase
+- `/signin` — User / admin login
+- `/admin` — Admin dashboard (ADMIN role)
 
-## License
+## Repository
 
-Private / project-specific — see repository owner.
+https://github.com/Cyberverse-cent0/from-cursor

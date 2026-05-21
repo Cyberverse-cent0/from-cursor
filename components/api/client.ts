@@ -95,8 +95,9 @@ export class ApiClient {
 
 // Admin proxy function for API routes
 export async function proxyAdminRequest(request: Request, endpoint: string) {
-  const BACKEND_BASE = process.env.ADMIN_BACKEND_URL || "http://localhost:6354";
-  const target = `${BACKEND_BASE}${endpoint}`;
+  const base = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXTAUTH_URL || "http://127.0.0.1:3000";
+  const BACKEND_BASE = `${base.replace(/\/$/, "")}/api/admin`;
+  const target = `${BACKEND_BASE}/${endpoint.replace(/^\/+/, "")}`;
   const headers = new Headers(request.headers);
   headers.delete("host");
   headers.delete("content-length");

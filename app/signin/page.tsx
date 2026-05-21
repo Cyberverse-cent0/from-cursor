@@ -7,15 +7,18 @@ import { LogIn, AlertCircle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 
 function SignInContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { data: session, status } = useSession();
-  const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+  const callbackUrl = searchParams.get("callbackUrl") || "/research-hub";
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -26,14 +29,31 @@ function SignInContent() {
   const handleGoogleSignIn = async () => {
     setLoading(true);
     setError("");
-
     try {
       await signIn("google", { callbackUrl });
-    } catch (error) {
-      console.error("Google sign in error:", error);
+    } catch (err) {
+      console.error("Google sign in error:", err);
       setError("Failed to sign in with Google. Please try again.");
       setLoading(false);
     }
+  };
+
+  const handleAdminSignIn = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+    const result = await signIn("credentials", {
+      email,
+      password,
+      redirect: false,
+      callbackUrl,
+    });
+    setLoading(false);
+    if (result?.error) {
+      setError("Invalid email or password.");
+      return;
+    }
+    router.push(callbackUrl);
   };
 
   if (status === "loading") {
@@ -96,21 +116,42 @@ function SignInContent() {
               </div>
             )}
 
-            {/* Information */}
-            <div className="text-center">
-              <p className="text-sm text-muted-foreground">
-                Sign in with your Google account to access the Research Hub
-              </p>
+            <div className="relative py-2">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-white px-2 text-muted-foreground">Admin</span>
+              </div>
             </div>
+
+            <form onSubmit={handleAdminSignIn} className="space-y-3">
+              <Input
+                type="email"
+                placeholder="Admin email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={loading}
+              />
+              <Input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                disabled={loading}
+              />
+              <Button type="submit" variant="secondary" className="w-full" disabled={loading}>
+                Sign in as admin
+              </Button>
+            </form>
+
+            <p className="text-center text-sm text-muted-foreground">
+              Google sign-in for research hub members; email/password for administrators.
+            </p>
           </div>
         </Card>
-
-        {/* Admin Access Info */}
-        <div className="mt-4 text-center">
-          <p className="text-xs text-muted-foreground">
-            Need admin access? Contact the system administrator
-          </p>
-        </div>
 
         {/* Back to Site */}
         <div className="mt-6 text-center">

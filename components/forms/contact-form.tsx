@@ -41,11 +41,7 @@ export function ContactForm() {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Add CSRF protection header
-          "X-CSRF-Token": generateCSRFToken(),
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
       });
 
@@ -89,13 +85,6 @@ export function ContactForm() {
         rows={5}
       />
 
-      {/* Hidden CSRF token */}
-      <input
-        type="hidden"
-        name="csrf_token"
-        value={generateCSRFToken()}
-      />
-
       {status === "success" ? (
         <div className="flex items-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
           <CheckCircle2 className="h-4 w-4" />
@@ -131,11 +120,4 @@ export function ContactForm() {
       </div>
     </form>
   );
-}
-
-// Simple CSRF token generation (client-side)
-function generateCSRFToken(): string {
-  const timestamp = Date.now().toString();
-  const random = Math.random().toString(36).substring(2);
-  return btoa(timestamp + random).substring(0, 32);
 }

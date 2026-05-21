@@ -1,0 +1,23 @@
+---
+# cPanel Git™ deployment — Stephen Asatsa (Next.js)
+# Docs: https://docs.cpanel.net/knowledge-base/web-services/guide-to-git-deployment/
+#
+# Before first deploy:
+#   1. cPanel → Setup Node.js App → Application root = stephenasatsa, startup = server.js
+#   2. Create $HOME/stephenasatsa/.env from .env.example (not overwritten by deploy)
+#   3. If your app folder name differs, change APP_ROOT below and in Node.js App settings
+#
+# If the Git repository *is* the Node app root (same directory), set:
+#   APP_ROOT=.
+# and comment out the rsync task.
+
+deployment:
+  tasks:
+    - export APP_ROOT=stephenasatsa
+    - export DEPLOYPATH=$HOME/$APP_ROOT
+    - /bin/mkdir -p $DEPLOYPATH
+    - /usr/bin/rsync -a --exclude=.git --exclude=node_modules --exclude=.next --exclude=.env --exclude=data --exclude=tmp $PWD/ $DEPLOYPATH/
+    - /bin/bash -lc 'APP_ROOT=stephenasatsa; DEPLOYPATH=$HOME/$APP_ROOT; NVENV=$HOME/nodevenv/$APP_ROOT; if [ -f "$NVENV/20/bin/activate" ]; then . "$NVENV/20/bin/activate"; elif [ -f "$NVENV/18/bin/activate" ]; then . "$NVENV/18/bin/activate"; fi; cd "$DEPLOYPATH" && npm install && npx prisma db push || true && npm run build'
+    - /bin/mkdir -p $DEPLOYPATH/tmp
+    - /usr/bin/touch $DEPLOYPATH/tmp/restart.txt
+    - /usr/local/bin/cloudlinux-selector restart --interpreter nodejs --app-root $APP_ROOT 2>/dev/null || true

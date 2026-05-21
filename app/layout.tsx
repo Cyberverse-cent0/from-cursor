@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 import "@/app/globals.css";
+import { AppProviders } from "@/components/providers/app-providers";
+import { createMetadata, siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Dr. Stephen Asatsa",
-  description: "Psychology and Research Services",
-};
+export const metadata: Metadata = createMetadata(
+  siteConfig.name,
+  siteConfig.description,
+);
 
 export default function RootLayout({
   children,
@@ -14,10 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen font-sans">
-        <div className="min-h-screen">
-          {children}
-        </div>
+      <body className="min-h-screen bg-background font-sans text-foreground antialiased">
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );

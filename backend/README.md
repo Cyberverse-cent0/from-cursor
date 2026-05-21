@@ -1,30 +1,7 @@
-# Admin Backend
+# Legacy Flask backend (not used on cPanel)
 
-Run the Python admin service from the project root:
+This folder is **not required** for the cPanel deployment.
 
-```bash
-python -m backend
-```
+All production APIs live in **`app/api/*`** (Next.js Route Handlers).
 
-Default local values:
-
-- `ADMIN_API_PORT=8000`
-- `ADMIN_ALLOWED_ORIGIN=http://localhost:3000`
-- `ADMIN_USERNAME=admin`
-- `ADMIN_PASSWORD=change-me-now`
-
-Recommended before production:
-
-- Set a strong `ADMIN_PASSWORD`
-- Set `ADMIN_TOTP_SECRET` to enforce one-time code login
-- Restrict `ADMIN_ALLOWED_ORIGIN`
-- Run the service behind HTTPS
-
-The backend edits:
-
-- `lib/content/site-content.json`
-- `lib/content/blog-data.json`
-
-Uploaded files are stored in:
-
-- `public/uploads/admin`
+Do not run `python app.py` or port `5001` on shared hosting.
