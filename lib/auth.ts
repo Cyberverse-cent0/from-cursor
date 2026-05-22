@@ -1,7 +1,8 @@
-import type { DefaultSession } from "next-auth";
+import type { DefaultSession, NextAuthOptions } from "next-auth";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";
+import { getServerSession } from "next-auth/next";
 import bcrypt from "bcryptjs";
 
 import { db, hasDatabaseUrl } from "@/lib/db";
@@ -73,33 +74,33 @@ if (process.env.ADMIN_EMAIL && process.env.ADMIN_PASSWORD) {
   );
 }
 
-const authConfig = {
-  session: { strategy: "jwt" as const },
+export const authOptions: NextAuthOptions = {
+  secret: process.env.NEXTAUTH_SECRET,
+  session: { strategy: "jwt" },
   pages: {
     signIn: "/signin",
     error: "/signin",
   },
   providers,
   callbacks: {
-    async session({ session, token }: { session: DefaultSession; token: Record<string, unknown> }) {
-      if (session.user && token) {
-        const user = session.user as DefaultSession["user"] & { id: string; role: string };
-        user.id = (token.sub as string) || "";
-        user.role = (token.role as string) || "USER";
+    async session({ session, token }) {
+      if (session.user) {
+        session.user.id = (token.sub as string) || "";
+        session.user.role = (token.role as string) || "USER";
       }
       return session;
     },
-    async jwt({ token, user }: { token: Record<string, unknown>; user?: { role?: string } }) {
-      if (user?.role) {
-        token.role = user.role;
+    async jwt({ token, user }) {
+      if (user && "role" in user) {
+        token.role = user.role as string;
       }
       return token;
     },
   },
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const handler = NextAuth(authConfig as any);
-export const auth = handler.auth;
-export const signIn = handler.signIn;
-export const signOut = handler.signOut;
+export const handler = NextAuth(authOptions);
+
+export async function auth() {
+  return await getServerSession(authOptions);
+}
